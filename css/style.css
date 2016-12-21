@@ -349,8 +349,8 @@ body {
 .work #workcont .thumb .description {
   width: 100%;
   height: 100%;
-  /*background-color: rgba(170,170,169,0.9);*/
-  background-color: #000;
+  background-color: rgba(0,0,0,0.7);
+  /*background-color: #000;*/
   position: absolute;
   top: 0;
   left: 0;
@@ -371,7 +371,7 @@ body {
 
 .work #workcont .thumb:hover .description {
   display: block;
-  opacity: 0.9;
+  /*opacity: 0.9;*/
 }
 
 
