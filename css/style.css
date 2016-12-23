@@ -415,7 +415,7 @@ body {
 }
 
 .portfolio-header .main-header p {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
 }
 
@@ -434,7 +434,7 @@ body {
 }
 
 .portfolio .brief-description p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   font-weight: 300;
 }
@@ -666,7 +666,7 @@ body {
 
 #uploadArea #topInput,
 #uploadArea #bottomInput {
-  width: 300px;
+  width: 260px;
   height: 30px;
   border-radius: 5px;
   border-style: none;
@@ -707,7 +707,7 @@ body {
 }
 
 .me_showcase img:nth-of-type(2n-1) {
-  margin-right: 3.5%;
+  margin-right: 3.4%;
 }
 
 
@@ -1052,7 +1052,7 @@ body {
 /************ media query section ************/
 /*********************************************/
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .wrapper {
     width: 90%;
   }
@@ -1070,7 +1070,7 @@ body {
   }
 
   .portfolio-header .brief .brief-description p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .portfolio-body .showcase_one .content .leftimg,
@@ -1097,6 +1097,19 @@ body {
 
   .rm_device .ipad img:nth-of-type(3n-1) {
     margin: 0 4.4%; 
+  }
+
+  #uploadArea #imgInput {
+    width: 150px;
+  }
+
+  #uploadArea #topInput,
+  #uploadArea #bottomInput {
+    width: 200px;
+  }
+
+  .displayImg {
+    width: 70%;
   }
 
 
@@ -1181,11 +1194,7 @@ body {
     margin-right: 9.4%;
   }
 
-  /*slideshow link*/
-  .slideshow .next p {
-    font-size: 18px;
-    margin-right: 10px;
-  }
+
 
   /*national geographic*/
   .ng_showcase,
@@ -1206,10 +1215,6 @@ body {
     margin: 2% 0 2% 0;
   }
 
-  .slideshow .next img {
-    width: 25px;
-  }
-
   /*reminder*/
   .rm_showcase_one,
   .rm_showcase_two,
@@ -1223,6 +1228,37 @@ body {
 
   .rm_device .ipad img:nth-of-type(3n-1) {
     margin: 0 4.4%; 
+  }
+
+  /*meme generator*/
+  .meme-title,
+  #uploadArea,
+  #displayArea,
+  .me_showcase {
+    width: 90%;
+  }
+
+  #uploadArea #imgInput {
+    width: 120px;
+  }
+
+  #uploadArea #topInput,
+  #uploadArea #bottomInput {
+    width: 170px;
+  }
+
+ 
+  
+  /*slideshow link*/
+  .slideshow .next img,
+  .slideshow .prev img {
+    width: 25px;
+  }
+
+  .slideshow .next p,
+  .slideshow .prev p {
+    font-size: 18px;
+    margin-right: 10px;
   }
 
 
@@ -1396,16 +1432,57 @@ body {
     margin: 0 4%; 
   }
 
+  /*meme generator*/
+  .meme-title,
+  #uploadArea,
+  #displayArea,
+  .me_showcase {
+    width: 90%;
+  }
+
+  #uploadArea #imgInput {
+    width: 40%;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  #uploadArea #topInput,
+  #uploadArea #bottomInput {
+    width: 400px;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+
+  #uploadArea #download,
+  #uploadArea #reset {
+    display: inline-block;
+    width: 150px;
+  }
+
+  #uploadArea #download {
+    margin-right: 10px;
+  }
+
+  .me_showcase img {
+    width: 100%;
+  }
+
+  .me_showcase img:nth-of-type(2n-1) {
+    margin: 0 0 60px 0;
+  }
+
 
 
 
   /*slideshow link*/
-  .slideshow .next p {
+  .slideshow .next p,
+  .slideshow .prev p {
     font-size: 18px;
     margin-right: 10px;
   }
 
-  .slideshow .next img {
+  .slideshow .next img,
+  .slideshow .prev img {
     width: 25px;
   }
 
@@ -1630,6 +1707,21 @@ body {
 
   .rm_device .ipad img:nth-of-type(3n-1) {
     margin: 0 3.8%; 
+  }
+
+  /*meme generator*/
+  .meme-title {
+    font-size: 14px;
+  }
+
+  #uploadArea #topInput,
+  #uploadArea #bottomInput {
+    width: 100%;
+  }
+
+  #uploadArea #download,
+  #uploadArea #reset {
+    width: 100px;
   }
 
   
