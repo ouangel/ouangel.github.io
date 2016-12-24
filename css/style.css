@@ -1045,6 +1045,16 @@ body {
   font-weight: 300;
 }
 
+#up {
+  transition: transform .2s cubic-bezier(.59, -0.54, .72, 1.59);
+  transform: translate(0px, 10px);
+}
+
+#up:hover {
+  transform: translate(0px, 4px);
+  cursor: pointer;
+}
+
 
 
 

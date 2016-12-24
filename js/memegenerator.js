@@ -16,8 +16,7 @@ img = new Image();
 
 drawing = function() {
 	var writeText = function (text, x, y) {
-        var s = 40;
-        for (; s >= 0; s -=1) {
+        for (var s=40; s >= 0; s -=1) {
             ctx.font = "bold " + s + "pt Impact, Charcoal, sans-serif";
             if (ctx.measureText(text).width < canvas.width - 10) {
             	// console.log("hi");
@@ -31,8 +30,8 @@ drawing = function() {
     canvas.height = img.height;
 	ctx.drawImage(img, 0, 0);
 	ctx.textAlign = "center";
-	ctx.fillStyle = "white";
-	ctx.strokeStyle = "black";
+	ctx.fillStyle = "#fff";
+	ctx.strokeStyle = "#000";
     ctx.lineWidth = 2;
 	writeText(topt.value, canvas.width/2, 55);
 	writeText(bottom.value, canvas.width/2, canvas.height - 10);
