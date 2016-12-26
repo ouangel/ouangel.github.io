@@ -13,54 +13,20 @@ close.onclick = function() {
 
 
 // back to top
-var requestAnimationFrame = window.requestAnimationFrame;
 var toTop = document.getElementById("up");
-var bodyElement = document.querySelector("body");
 
-var currentPos;
-var iteration;
-var start = false;
+toTop.addEventListener("click", smoothscroll);
+function smoothscroll(){
 
-function setup() {
-	toTop.addEventListener("click", backToTop, false);
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+         window.requestAnimationFrame(smoothscroll);
+         window.scrollTo (0,currentScroll - (currentScroll/5));
+    }
+};
 
-	bodyElement.addEventListener("mousewheel", stopScroll, false);
-	bodyElement.addEventListener("DOMMouseScroll", stopScroll, false);
+smoothscroll();
 
-	animationLoop();
-}
 
-setup();
 
-function backToTop(e) {
-	currentPos = getScrollPos();
 
-	start ^= true;
-	iteration = 0;
-}
-
-function stopScroll() {
-	start = false;
-}
-
-function getScrollPos() {
-	if (document.documentElement.scrollTop == 0) {
-		return document.body.scrollTop;
-	} else {
-		return document.documentElement.scrollTop;
-	}
-}
-
-function animationLoop () {
-	if (start) {
-		window.scrollTo(0, 0);
-
-		// iteration++;
-
-		if (getScrollPos() <= 0) {
-			stopScroll();
-		}
-	}
-
-	requestAnimationFrame(animationLoop);
-}
