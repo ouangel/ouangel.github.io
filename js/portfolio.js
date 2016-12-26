@@ -1,3 +1,4 @@
+// navigation bar
 var icon = document.getElementById("hamburger");
 var nav = document.getElementById("dropdown");
 var close = document.getElementById("close-btn");

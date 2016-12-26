@@ -1,4 +1,4 @@
-  * {
+* {
   box-sizing: border-box;
   margin: 0;
 }
@@ -1005,7 +1005,9 @@ body {
   margin: 0 auto 70px auto;
 }
 
-.slideshow .prev {
+.slideshow .prev,
+.slideshow #up,
+.slideshow .next {
   float: left;
 }
 
@@ -1045,13 +1047,20 @@ body {
   font-weight: 300;
 }
 
+.slideshow .prev:hover {
+  transform: translate(-5px, 0px);
+}
+
+.slideshow .next:hover {
+  transform: translate(5px, 0px);
+}
+
 #up {
-  transition: transform .2s cubic-bezier(.59, -0.54, .72, 1.59);
-  transform: translate(0px, 10px);
+  /*transform: translate(0px, 10px);*/
 }
 
 #up:hover {
-  transform: translate(0px, 4px);
+  transform: translate(0px, -5px);
   cursor: pointer;
 }
 
