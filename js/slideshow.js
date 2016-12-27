@@ -1,28 +1,14 @@
-// define the next and prev button from html
-// define the img id from html
-var next = document.getElementById("next");
-var prev = document.getElementById("prev");
-var img = document.getElementById("slideimg");
+// back to top
+var toTop = document.getElementById("up");
 
-// when the next button is clicked, go to next slide
-var num = 1;
-// have 7 imgs in total
-var total = 7;
+toTop.addEventListener("click", smoothscroll);
+function smoothscroll(){
 
-// when the next button is clicked, go to next slide
-next.onclick = function() {
-	num++;
-	if (num > total) {
-		num = 1;
-	}
-	img.src = "../img/car/carImg" + num + ".jpg";
-}
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+         window.requestAnimationFrame(smoothscroll);
+         window.scrollTo (0,currentScroll - (currentScroll/5));
+    }
+};
 
-// when the prev button is clicked, go to next slide
-prev.onclick = function() {
-	num--;
-	if (num < 1) {
-		num = total;
-	}
-	img.src = "../img/car/carImg" + num + ".jpg";
-}
+smoothscroll();

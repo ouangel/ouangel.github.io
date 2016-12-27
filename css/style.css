@@ -887,7 +887,7 @@ body {
 #contact .personal-info p {
   font-size: 18px;
   padding-bottom: 10px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 #contact-form .field {
@@ -1008,7 +1008,8 @@ body {
 .slideshow .prev,
 .slideshow #up,
 .slideshow .next {
-  float: left;
+  display: inline-block;
+  width: 33.1%;
 }
 
 .slideshow .next a {
@@ -1056,7 +1057,7 @@ body {
 }
 
 #up {
-  /*transform: translate(0px, 10px);*/
+  text-align: center;
 }
 
 #up:hover {
@@ -1129,6 +1130,19 @@ body {
 
   .displayImg {
     width: 70%;
+  }
+
+
+  /*slideshow*/
+  .slideshow .prev,
+  .slideshow .next,
+  .slideshow #up {
+    width: 32.9%;
+  }
+
+  .slideshow .prev p,
+  .slideshow .next p {
+    font-size: 20px;
   }
 
 
@@ -1496,13 +1510,24 @@ body {
   /*slideshow link*/
   .slideshow .next p,
   .slideshow .prev p {
-    font-size: 18px;
-    margin-right: 10px;
+    /*font-size: 18px;
+    margin-right: 10px;*/
+    display: none;
   }
 
   .slideshow .next img,
   .slideshow .prev img {
     width: 25px;
+  }
+
+  #up img {
+    width: 17px;
+  }
+
+  .slideshow .next,
+  .slideshow .prev,
+  .slideshow #up {
+    width: 32.4%;
   }
 
 
@@ -1540,7 +1565,7 @@ body {
   }
 
   #social-media .flip-container {
-    width: 33.333%;
+    width: 50%;
     float: left;
     margin: 50px auto 0 auto;
   }
@@ -1773,6 +1798,16 @@ body {
 
   .slideshow .prev img {
     width: 25px;
+  }
+
+  #up img {
+    width: 15px;
+  }
+
+  .slideshow .next,
+  .slideshow .prev,
+  .slideshow #up {
+    width: 32.4%;
   }
 
 
